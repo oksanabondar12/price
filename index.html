@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Главная </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#home" data-toggle="tab">Формат</a></li>
+  <li><a href="#profile" data-toggle="tab">Товары, категории</a></li>
+  <li><a href="#messages" data-toggle="tab">Генерация</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home">
+  <br>
+	  <form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Название прайс листа:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Название прайс листа">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Формат прайс листа</label>
+   <select class="form-control">
+  <option>.xls (excel)</option>
+  <option>.xlsx (excel)</option>
+  <option>.xml</option>
+  <option>.csv</option>
+</select>
+  </div>
+    <div class="form-group">
+    <label for="exampleInputPassword1">Тип цены (тип цены - отдельная колонка файла ):</label>
+   <select multiple class="form-control">
+  <option>відпускні 1</option>
+  <option>Retail price</option>
+  <option>Kidstaf</option>
+  <option>Kindernet</option>
+</select>
+  </div>
+
+   <div class="form-group">
+    <label for="exampleInputPassword1">Доступность на складе:</label>
+<div class="radio">
+  <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+          Все товары
+        </label>
+</div>
+<div class="radio">
+  <label>
+          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+          Только в наличии
+        </label>
+</div>
+  </div>
+
+
+	</form>
+</div>
+  <div class="tab-pane" id="profile">
+  <br>
+  <form role="form">
+	   <div class="form-group">
+	   <label for="exampleInputPassword1">Список категорий:</label>
+	   <select size=" 10" multiple class="form-control 	">
+		   <option selected="selected">Все</option>
+		   <option>Летний транспорт</option>
+
+		  <option>-- Беговелы</option>
+		  <option>-- Самокаты</option>
+		  <option>-- Велосипеды</option>
+		  <option>-- Машинки-каталки</option>
+		  <option>-- Коляски</option>
+
+		  <option>Зимний транспорт</option>
+		  <option>-- САНКИ - аксессуары</option>
+		  <option>-- САНКИ - комплекты</option>
+		  <option>Для дома</option>
+		  <option>Для дома</option>
+	   <option>НОВИНКИ !!!</option>
+		</select>
+  </div>
+
+  <div class="form-group">
+
+  <label>
+          <input type="checkbox" checked="" value="">
+          Выгружать изображения
+        </label>
+</div>
+  <div class="form-group">
+  <label>
+          <input type="checkbox" checked="" value="">
+          Выгружать описания
+        </label>
+</div>
+	   <div class="form-group">
+	   <label for="exampleInputPassword1">Список свойств:</label>
+	   <select size=" 10" multiple class="form-control">
+		 <option>Артикул</option>
+		  <option>Бренд</option>
+		   <option>Тип</option>
+		    <option>Вид</option>
+		  <option>Возраст ребёнка</option>
+		  <option>Рост ребёнка</option>
+ <option>Максимальный вес ребенка</option> 
+ <option>Диаметр колес</option>
+		</select>
+	  	</div>
+
+  </div>
+  <div class="tab-pane" id="messages">
+  <br>
+<div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+      <button type="button" class="btn btn-primary btn-lg btn-block">Сгенерировать</button>
+</div>
+
+<div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+      <button type="button" class="btn btn-success btn-lg btn-block">Скачать</button>
+</div>
+
+  
+</div>
+
+</div>
+</body>
+</html>
